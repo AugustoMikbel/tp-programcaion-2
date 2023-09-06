@@ -1,7 +1,7 @@
 # Trabajo Práctico I - Programación II
-
-
+import libro as l
 import os
+import bibloteca as bi
 
 print("Bienvenido!")
 respuesta = ''
@@ -19,12 +19,15 @@ while respuesta != "salir":
     opt = input("\n Ingrese la opción de menú: ")
     os.system ("cls") #Limpiar pantalla
     if opt.isnumeric():
+
         if int(opt) == 1:
             #completar
-            print()
+            bi.prestar_ejemplar_libro()
+        
         elif int(opt) == 2:
             #completar
-            print()
+            bi.devolver_ejemplar_libro()
+        
         elif int(opt) == 3:
             #completar
             print()
