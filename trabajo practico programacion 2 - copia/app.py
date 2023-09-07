@@ -21,11 +21,11 @@ while respuesta != "salir":
     if opt.isnumeric():
 
         if int(opt) == 1:
-            #completar
+            
             bi.prestar_ejemplar_libro()
         
         elif int(opt) == 2:
-            #completar
+            
             bi.devolver_ejemplar_libro()
         
         elif int(opt) == 3:
@@ -35,7 +35,9 @@ while respuesta != "salir":
             #completar
             print()
         elif int(opt) == 5:
-            #completar
+            
+            bi.ejemplares_prestados()
+
             print()
         elif int(opt) == 6:
             respuesta = "salir"
