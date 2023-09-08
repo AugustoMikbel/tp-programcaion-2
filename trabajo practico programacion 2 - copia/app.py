@@ -1,3 +1,4 @@
+
 # Trabajo Práctico I - Programación II
 import libro as l
 import os
@@ -21,21 +22,24 @@ while respuesta != "salir":
     if opt.isnumeric():
 
         if int(opt) == 1:
-            #completar
+            
             bi.prestar_ejemplar_libro()
         
         elif int(opt) == 2:
-            #completar
+            
             bi.devolver_ejemplar_libro()
         
         elif int(opt) == 3:
-            #completar
+            
+            bi.registrar_nuevo_libro()
             print()
         elif int(opt) == 4:
-            #completar
+            bi.eliminar_ejemplar_libro()
             print()
         elif int(opt) == 5:
-            #completar
+            
+            bi.ejemplares_prestados()
+
             print()
         elif int(opt) == 6:
             respuesta = "salir"
@@ -44,5 +48,6 @@ while respuesta != "salir":
         print("Ingrese una opción numérica")
     
     input("Presione cualquier tecla para continuar....") # Pausa
+
 
 print("Hasta luego!.")
