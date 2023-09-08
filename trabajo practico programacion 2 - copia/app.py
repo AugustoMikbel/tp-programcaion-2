@@ -29,10 +29,11 @@ while respuesta != "salir":
             bi.devolver_ejemplar_libro()
         
         elif int(opt) == 3:
-            #completar
+            
+            bi.registrar_nuevo_libro()
             print()
         elif int(opt) == 4:
-            #completar
+            bi.eliminar_ejemplar_libro()
             print()
         elif int(opt) == 5:
             

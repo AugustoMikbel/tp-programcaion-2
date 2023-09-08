@@ -13,12 +13,27 @@ def ejemplares_prestados():
         print(i)
 
 def registrar_nuevo_libro():
-    nuevo_libro = l.nuevo_libro()
-    #completar  
+   #Opción 3.
+    registro_nuevo_ejemplar=l.nuevo_libro()
+    if registro_nuevo_ejemplar:
+        libros.append(registro_nuevo_ejemplar)
+        print("")
+        print("Los nuevos libros han sido agregados al registro de la biblioteca")
+    else:
+        print("No se realizó ningún alta por elección del usuario")  
     return None
 
 def eliminar_ejemplar_libro():
-    #completar
+    #Opción 4.
+    codigo_a_borrar=input("Por favor ingrese el código del libro a eliminar: ")
+    for libro in libros:
+        if codigo_a_borrar==libro["cod"]:
+            print(f"Se ha restado una unidad del stock total de ese libro. *Código: {codigo_a_borrar}")
+            libro["cant_ej_ad"]-=1
+            print("El total en stock de ese libro es: \t")
+            print(libro["cant_ej_ad"])
+            return
+    print(f"El código ingresado: {codigo_a_borrar} no se pertenece a ningún libro existente.\n")
     return None
 
 def prestar_ejemplar_libro():
